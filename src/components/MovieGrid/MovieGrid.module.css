@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  list-style: none;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 150ms ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 3;
+  background-color: #e5e5e5;
+  color: #666;
+}
+
+.title {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
